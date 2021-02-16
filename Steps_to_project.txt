@@ -1,0 +1,99 @@
+
+install Mavan and Java in ubuntu 
+===================================================
+https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-20-04/
+-------------------------------------------------------------------------------------------------
+sudo apt update
+sudo apt list --upgradable
+sudo apt update
+sudo apt install openjdk-11-jdk
+java -version
+sudo apt install maven
+mvn -version
+history
+=============================================================
+
+Now java and Mavan installed in loacal PC or cloud 
+
+Note :-  we are generaiong .jar file here 
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+cd my-app
+
+mvn clean install
+
+mvn clean
+mvn package
+tree
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+history
+
+
+
+
+====================================================================
+Syntax
+ mvn archetype:generate 
+ -DgroupId={project-packaging} -DartifactId={project-name} -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+
+Command
+
+mvn archetype:generate -DgroupId=com.javacodegeeks -DartifactId=SampleWebApplication -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+mvn archetype:generate  -DarchetypeGroupId=com.vaadin  -DarchetypeArtifactId=vaadin-archetype-application -DgroupId=com.howtodoinjava.vaadin.demo -DartifactId=VaadinExample 
+    -Dversion=1.0
+    -Dpackaging=war
+
+mvn archetype:generate -DgroupId=com.mkyong.web -DartifactId=java-web-project -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+
+mvn archetype:generate 
+    -DarchetypeGroupId=com.vaadin 
+    -DarchetypeArtifactId=vaadin-archetype-application 
+    -DarchetypeVersion=LATEST 
+    -DgroupId=com.howtodoinjava.vaadin.demo 
+    -DartifactId=VaadinExample 
+    -Dversion=1.0
+    -Dpackaging=war
+	
+mvn archetype:generate 
+	-DgroupId=com.mkyong.web 
+	-DartifactId=java-web-project 
+	-DarchetypeArtifactId=maven-archetype-webapp 
+	-DinteractiveMode=false
+	-DarchetypeVersion=LATEST 
+	-Dversion=1.0
+    -Dpackaging=war
+
+mvn -B archetype:generate \
+	-DgroupId=com.mycompany.app \
+	-DartifactId=my-app \
+	-DarchetypeArtifactId=maven-archetype-quickstart \
+	-DarchetypeVersion=1.4 \
+	-Dversion=1.0
+
+
+mvn archetype:generate 
+	-DgroupId=com.jcg.maven 
+	-DartifactId=MavenHelloWorldProject 
+	-DarchetypeArtifactId=maven-archetype-quickstart 
+	-DinteractiveMode=false
+
+mvn archetype:generate 
+	-DgroupId=com.dineshonjava 
+	-DartifactId=JavaHelloWorld 
+	-DarchetypeArtifactId=maven-archetype-quickstart 
+	-DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.jcg.maven -DartifactId=MavenHelloWorldProject -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+
